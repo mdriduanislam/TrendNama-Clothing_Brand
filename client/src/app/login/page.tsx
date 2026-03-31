@@ -4,13 +4,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { LogIn } from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 import useAuthStore from "@/stores/authStore";
 import { LoginFormInputs, loginFormSchema } from "@/types";
 
-const LoginPage = () => {
+const LoginPageContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { bootstrap, login, isAuthenticated, isLoading } = useAuthStore();
@@ -128,6 +128,14 @@ const LoginPage = () => {
         Back to home
       </Link>
     </div>
+  );
+};
+
+const LoginPage = () => {
+  return (
+    <Suspense fallback={<div className="mt-12 text-center">Loading...</div>}>
+      <LoginPageContent />
+    </Suspense>
   );
 };
 
