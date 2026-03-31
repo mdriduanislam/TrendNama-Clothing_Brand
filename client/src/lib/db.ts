@@ -1,10 +1,13 @@
 import { DatabaseSync } from "node:sqlite";
-import { readFileSync } from "node:fs";
+import { copyFileSync, existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 let dbInstance: DatabaseSync | null = null;
 
-const dbPath = path.resolve(process.cwd(), "..", "shared", "data", "app.db");
+const sharedDataDir = path.resolve(process.cwd(), "..", "shared", "data");
+const sharedDbPath = path.join(sharedDataDir, "app.db");
+const isVercel = Boolean(process.env.VERCEL);
+const dbPath = isVercel ? "/tmp/trendnama-app.db" : sharedDbPath;
 const productsSeedPath = path.resolve(
   process.cwd(),
   "..",
@@ -19,6 +22,16 @@ const usersSeedPath = path.resolve(
   "data",
   "users.json"
 );
+
+const ensureDbFile = () => {
+  if (!isVercel || existsSync(dbPath)) {
+    return;
+  }
+
+  if (existsSync(sharedDbPath)) {
+    copyFileSync(sharedDbPath, dbPath);
+  }
+};
 
 const initializeSchema = (db: DatabaseSync) => {
   db.exec(`
@@ -165,6 +178,7 @@ export const getDb = () => {
     return dbInstance;
   }
 
+  ensureDbFile();
   const db = new DatabaseSync(dbPath);
   initializeSchema(db);
   seedProductsIfEmpty(db);
