@@ -170,7 +170,9 @@ const AddProduct = () => {
 
     for (const color of selectedColors) {
       const fileForColor = colorImageFiles[color];
-      const colorImageValue = form.getValues(`image_${color}` as never);
+      const colorImageValue = (form.getValues() as Record<string, unknown>)[
+        `image_${color}`
+      ];
 
       if (fileForColor) {
         try {
