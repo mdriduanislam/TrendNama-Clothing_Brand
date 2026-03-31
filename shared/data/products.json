@@ -1,0 +1,188 @@
+[
+  {
+    "id": "1",
+    "name": "Adidas CoreFit T-Shirt",
+    "shortDescription": "Lightweight training tee with sweat-wicking comfort.",
+    "description": "A breathable training t-shirt built for daily workouts and all-day comfort.",
+    "price": 39.9,
+    "category": "t-shirts",
+    "sizes": [
+      "s",
+      "m",
+      "l",
+      "xl",
+      "xxl"
+    ],
+    "colors": [
+      "gray",
+      "purple",
+      "green"
+    ],
+    "images": {
+      "gray": "/products/1g.png",
+      "purple": "/products/1p.png",
+      "green": "/products/1gr.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "name": "Puma Ultra Warm Zip",
+    "shortDescription": "Cozy zip layer for cool weather runs.",
+    "description": "A warm and flexible zip-up designed for early mornings and cold evenings.",
+    "price": 59.9,
+    "category": "jackets",
+    "sizes": [
+      "s",
+      "m",
+      "l",
+      "xl"
+    ],
+    "colors": [
+      "gray",
+      "green"
+    ],
+    "images": {
+      "gray": "/products/2g.png",
+      "green": "/products/2gr.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "name": "Nike Air Essentials Pullover",
+    "shortDescription": "Soft pullover hoodie for everyday wear.",
+    "description": "A classic pullover with a modern athletic fit and ultra-soft interior.",
+    "price": 69.9,
+    "category": "jackets",
+    "sizes": [
+      "s",
+      "m",
+      "l"
+    ],
+    "colors": [
+      "green",
+      "blue",
+      "black"
+    ],
+    "images": {
+      "green": "/products/3gr.png",
+      "blue": "/products/3b.png",
+      "black": "/products/3bl.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "Nike Dri Flex T-Shirt",
+    "shortDescription": "Stretchy, quick-dry t-shirt for active days.",
+    "description": "Dri-fit inspired tee that keeps you cool during intense movement.",
+    "price": 29.9,
+    "category": "t-shirts",
+    "sizes": [
+      "s",
+      "m",
+      "l"
+    ],
+    "colors": [
+      "white",
+      "pink"
+    ],
+    "images": {
+      "white": "/products/4w.png",
+      "pink": "/products/4p.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "name": "Under Armour StormFleece",
+    "shortDescription": "Performance fleece for all-weather comfort.",
+    "description": "A cozy but breathable fleece built for movement and warmth.",
+    "price": 49.9,
+    "category": "jackets",
+    "sizes": [
+      "s",
+      "m",
+      "l"
+    ],
+    "colors": [
+      "red",
+      "orange",
+      "black"
+    ],
+    "images": {
+      "red": "/products/5r.png",
+      "orange": "/products/5o.png",
+      "black": "/products/5bl.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "name": "Nike Air Max 270",
+    "shortDescription": "Cushioned sneakers with all-day support.",
+    "description": "Iconic lifestyle shoes blending comfort cushioning with a clean silhouette.",
+    "price": 59.9,
+    "category": "shoes",
+    "sizes": [
+      "40",
+      "42",
+      "43",
+      "44"
+    ],
+    "colors": [
+      "gray",
+      "white"
+    ],
+    "images": {
+      "gray": "/products/6g.png",
+      "white": "/products/6w.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "name": "Nike Ultraboost Pulse",
+    "shortDescription": "Responsive running shoes with lightweight build.",
+    "description": "A springy shoe designed for comfort-focused runs and city walks.",
+    "price": 69.9,
+    "category": "shoes",
+    "sizes": [
+      "40",
+      "42",
+      "43"
+    ],
+    "colors": [
+      "gray",
+      "pink"
+    ],
+    "images": {
+      "gray": "/products/7g.png",
+      "pink": "/products/7p.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "8",
+    "name": "Levi's Classic Denim",
+    "shortDescription": "Timeless denim jacket for every outfit.",
+    "description": "A versatile denim staple with a structured fit and durable feel.",
+    "price": 59.9,
+    "category": "jackets",
+    "sizes": [
+      "s",
+      "m",
+      "l"
+    ],
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "images": {
+      "blue": "/products/8b.png",
+      "green": "/products/8gr.png"
+    },
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "u1",
+    "name": "Demo User",
+    "email": "user@example.com",
+    "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "createdAt": "2026-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "2216ba24-a34e-4509-9b55-62795659ab1f",
+    "name": "Md. Riduan Islam",
+    "email": "mohhammadris786@gmail.com",
+    "passwordHash": "472bbe83616e93d3c09a79103ae47d8f71e3d35a966d6e8b22f743218d04171d",
+    "createdAt": "2026-03-30T18:42:31.503Z"
+  }
+]
