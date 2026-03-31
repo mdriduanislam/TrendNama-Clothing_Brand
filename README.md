@@ -2,6 +2,11 @@
 
 Monorepo for the TrendNama ecommerce project with separate **client** and **admin** Next.js apps, plus shared seed data.
 
+## Live Deployment
+
+- Client: https://trend-nama-clothing-brand-kycq.vercel.app/
+- Admin: https://trendnamaadminpanel.vercel.app/
+
 ## Project Structure
 
 - `client/` - Customer-facing ecommerce website
